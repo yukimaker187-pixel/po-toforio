@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>化粧品メーカーLP ケーススタディ | Kouya design&creative</title>
+<link rel="icon" type="image/png" href="../../assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Shippori+Mincho:wght@500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/case-study.css">
+</head>
+<body>
+<div class="cs-page">
+
+  <header class="cs-header">
+    <a href="../../index.html#top" style="display:flex;align-items:center">
+      <img src="../../assets/kouya-logo.png" alt="KOUYA BIG DIPPER DESIGN" style="height:64px;width:auto;object-fit:contain">
+    </a>
+    <nav>
+      <a href="../../index.html#works"   class="nav-link">WORKS</a>
+      <a href="../../index.html#service" class="nav-link">SERVICE</a>
+      <a href="../../index.html#about"   class="nav-link">ABOUT</a>
+    </nav>
+    <a href="../../index.html#contact" class="contact-btn" style="display:flex;align-items:center;gap:12px;padding:12px 20px;border:1px solid rgba(199,166,112,.55);border-radius:2px;transition:background .2s">
+      <span style="font-family:'Cinzel',serif;font-size:11.5px;letter-spacing:3px;color:#f2ede3;text-decoration:underline;text-underline-offset:4px">CONTACT</span>
+    </a>
+  </header>
+
+  <section class="cs-hero">
+    <div class="cs-hero-inner">
+      <a href="../../index.html#works" style="font-size:12px;letter-spacing:.05em;color:#8a94a3">← WORKS一覧に戻る</a>
+      <div style="margin-top:20px">
+        <span class="cs-tag">LP / COSMETICS</span>
+      </div>
+      <h1>化粧品メーカーLP</h1>
+      <p class="lead">「使った後の自分」を想像させる世界観設計で、購入までの導線をつくる。</p>
+      <p class="cs-disclaimer">※架空ブランドを想定した自主制作です。</p>
+    </div>
+  </section>
+
+  <section class="cs-block">
+    <div class="cs-block-label">01 / OVERVIEW</div>
+    <h2>概要</h2>
+    <dl class="cs-meta-grid">
+      <dt>種別</dt><dd>ランディングページ(自主制作)</dd>
+      <dt>想定クライアント</dt><dd>ナチュラル系スキンケアブランド</dd>
+      <dt>担当範囲</dt><dd>企画・構成・コピー・デザイン・実装</dd>
+    </dl>
+    <!-- TODO(制作期間): 原稿に記載がないため未掲載。確定後に追記してください。 -->
+    <!-- TODO(使用技術): 原稿は「Next.js(App Router)/ CSS Modules」表記だが、
+         本サイト自体はNext.js未導入の静的HTMLで、この案件専用のスタック記載が必要。
+         なお現行の cosme/index.html は Next.js/Turbopack のビルド出力そのままで、
+         next/font のCSS変数(--font-cinzel 等)が残っているため、実際にNext.jsで
+         制作された可能性が高い。使用技術欄に載せる正式な表記を確認してください。 -->
+  </section>
+
+  <section class="cs-block">
+    <div class="cs-block-label">02 / PROBLEM</div>
+    <h2>課題</h2>
+    <p>化粧品LPは競合が多く、成分やスペックの羅列では差別化できない。「使った後の自分」を想像させる世界観の構築と、購入ボタンまでの自然な導線設計が課題だった。</p>
+  </section>
+
+  <section class="cs-block">
+    <div class="cs-block-label">03 / APPROACH</div>
+    <h2>設計の意図</h2>
+    <ul>
+      <li>ファーストビューで世界観を伝え、スクロールに沿って「共感 → 成分の裏付け → 使用感 → 価格・オファー」の順に不安を解消していく王道構成。</li>
+      <li>トンマナは、黒に近いワイン色(#120608系)を基調にゴールド(#d4b878)とワインレッド(#c01a28)を差し色として使用し、パリの高級ブランドを想起させる重厚感と上質さを両立。見出しはCinzel/Shippori Minchoで気品を、本文はNoto Sans JPで読みやすさを担保。</li>
+    </ul>
+    <!-- TODO(ターゲット設定): 原稿は「20〜30代女性、成分意識が高く、SNSで情報収集する層(※実際の設定に合わせて修正)」と仮置きのため未掲載。確定後に追記してください。 -->
+  </section>
+
+  <section class="cs-block">
+    <div class="cs-block-label">04 / DETAIL</div>
+    <h2>工夫した点</h2>
+    <ul>
+      <li>デザイン面: 商品写真やモデル写真はradial-gradientでマスキングして輪郭を背景に溶け込ませ、リボン状の光の装飾をゆっくりドリフトさせることで、静止した物撮り感を消して奥行きと高級感を演出。ゴールド(#d4b878)とワインレッド(#c01a28)を差し色に、Cinzel / Cormorant Garamond / Shippori Minchoを使い分け、欧文と和文のバランスを取りながらハイブランドらしいトンマナにまとめた。</li>
+      <li>実装面: スクロール誘導の矢印、瞬く光の粒子、フローティングする商品画像などにそれぞれ異なるCSSアニメーションを持たせ、ページ全体に静と動のリズムを作った。CTAボタンの配色はcolor-mix()でアクセントカラーから自動生成して管理コストを抑え、レビューの星評価は★の重なりで小数点評価(4.5など)を再現するなど、細部の説得力にもこだわった。</li>
+    </ul>
+  </section>
+
+  <section class="cs-block">
+    <div class="cs-block-label">05 / OUTCOME</div>
+    <h2>成果 / 学び</h2>
+    <p>自主制作のため数値成果はないが、この制作を通じて化粧品・美容系LPの構成テンプレートを確立。同ジャンルの案件では構成提案から最短4日で着手可能。</p>
+    <a class="cs-demo-link" href="../../cosme/index.html">実際のページを見る
+      <span style="width:20px;height:20px;border-radius:50%;border:1px solid rgba(199,166,112,.5);display:flex;align-items:center;justify-content:center">
+        <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#c7a670" stroke-width="2"><path d="M5 12h13M13 6l6 6-6 6"></path></svg>
+      </span>
+    </a>
+  </section>
+
+  <section class="cs-cta">
+    <div class="cs-block-label" style="text-align:center">CONTACT</div>
+    <h2>同様の制作のご相談はこちら</h2>
+    <p>ご相談・お見積りは無料です。お気軽にご連絡ください。</p>
+    <a href="../../index.html#contact" class="cta-btn cs-cta-btn">
+      <span class="label">お問い合わせフォームへ</span>
+      <span class="icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#b8935a" stroke-width="2.4"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></span>
+    </a>
+  </section>
+
+  <footer class="cs-footer">
+    <div class="cs-footer-inner">
+      <a href="../../index.html#top" style="display:flex;align-items:center">
+        <img src="../../assets/kouya-logo.png" alt="KOUYA BIG DIPPER DESIGN" style="height:56px;width:auto;object-fit:contain">
+      </a>
+      <nav>
+        <a href="../../index.html#works"   class="nav-link">WORKS</a>
+        <a href="../../index.html#service" class="nav-link">SERVICE</a>
+        <a href="../../index.html#about"   class="nav-link">ABOUT</a>
+        <a href="../../index.html#contact" class="nav-link">CONTACT</a>
+      </nav>
+    </div>
+    <div class="cs-footer-bottom">
+      <span>© 倖屋 WEB DESIGN &amp; CREATIVE</span>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
