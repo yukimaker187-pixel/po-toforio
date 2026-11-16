@@ -1,0 +1,18 @@
+# kouya-creative.com
+User-agent: *
+Allow: /
+
+# AI検索クローラー（検索結果・回答に表示されるためのもの）
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: PerplexityBot
+User-agent: Claude-SearchBot
+Allow: /
+
+# 学習用クローラーを止めたい場合は、下の4行の先頭の # を外す
+# User-agent: GPTBot
+# User-agent: ClaudeBot
+# User-agent: Google-Extended
+# Disallow: /
+
+Sitemap: https://kouya-creative.com/sitemap.xml
